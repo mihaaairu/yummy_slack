@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "yummy-slack"
+version = "1.0.0"
+description = ""
+authors = ["mihaaairu <1651319@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10, <3.13"
+requests = "^2.31.0"
+slack-sdk = "^3.23.1"
+airium = "^0.2.6"
+flask = "^3.0.0"
+pyside6 = "^6.6.0"
+coloredlogs = "^15.0.1"
+pyinstaller = "^6.2.0"
+pyopenssl = "^23.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
