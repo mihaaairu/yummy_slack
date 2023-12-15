@@ -1,4 +1,5 @@
-# About the project
+# Yummy Slack
+### About the project
 
 "Yummy Slack" is an open-source project for creating backups of Slack messenger public / private channels and direct messages.  
 It needs a [Slack-App](https://api.slack.com/apps) as a backend, so you need to create your own in your Slack-workspace. Read about this further.
