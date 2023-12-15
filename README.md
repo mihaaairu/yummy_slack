@@ -12,7 +12,10 @@ It needs a [Slack-App](https://api.slack.com/apps) as a backend, so you need to 
 ### Useful commands for binaries and resources:  
 - Convert `.ui` file to `.py` with PySide6 - `pyside6-uic app/resources/ui_files/main_window.ui -o main_window_ui.py`
 - Convert `.qrc` file to `.py` with PySide6 - `pyside6-rcc app/resources/resource.qrc -o resource_rc.py`
-- Compile project to executable file with pyinstaller - `pyinstaller app.py -F --noconsole --icon=app/resources/icons/candy.ico --name "Yummy Slack"`  
+- Compile project to executable file with pyinstaller - `pyinstaller app.py -F --noconsole --icon=app/resources/icons/candy.ico --name "Yummy Slack"`
+
+### Support the developer
+In development for now :>
 
 # Getting stated
 
@@ -113,6 +116,3 @@ ___To start backup, choose necessary chats / channels from the relevant groups a
 
 That's all. Feel free to use as it is / fork / modify. 
 
-## Support the developer
-
-In development for now :>
