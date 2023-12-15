@@ -1,8 +1,7 @@
 # About the project
-___
+
 "Yummy Slack" is an open-source project for creating backups of Slack messenger public / private channels and direct messages.  
 It needs a [Slack-App](https://api.slack.com/apps) as a backend, so you need to create your own in your Slack-workspace. Read about this further.
-___
 
 ### Useful links:
 - [Slack API docs](https://api.slack.com/docs)
@@ -14,9 +13,7 @@ ___
 - Convert `.qrc` file to `.py` with PySide6 - `pyside6-rcc app/resources/resource.qrc -o resource_rc.py`
 - Compile project to executable file with pyinstaller - `pyinstaller app.py -F --noconsole --icon=app/resources/icons/candy.ico --name "Yummy Slack"`  
 
-___
 # Getting stated
-___
 
 ## File structure
  - "Yummy Slack" (hereinafter simply app) is a program for the Windows system (for now).  
@@ -51,7 +48,7 @@ User should edit `./AppData/config/app_auth.conf` only. Read about this further.
 Logging files, stored in `./AppData/logs/` is useful for troubleshooting.  
 
 ___Please report errors that occur while using the program to this GitHub in the issues section, attaching the corresponding log-files.___  
-___
+
 ## The first launch
 *__The application has a fairly user-friendly interface and informative messages, so carefully read the messages provided by the program and follow its instructions.__*  
 
@@ -90,7 +87,7 @@ Choose your Slack-Workspace and allow permissions-request.
 
 🎉 ___Congratulations!___ 🎉  
 You have successfully logged into the app (if all worked as expected ofc). The hardest part is over. Your user-authorisation data will be stored in `AppData/cache/user.cache` on the program closing.
-___
+
 ## Basic usage
 
 After logging in, you will see the apps main page instead of previous info-page with single button.  
