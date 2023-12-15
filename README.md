@@ -109,46 +109,10 @@ App has pretty simple GUI.
 > 
 >![start_pop_up.png](/app/resources/images/start_pop_up.png) ![complete_pop_up.png](/app/resources/images/complete_pop_up.png) ![warning_pop_up.png](/app/resources/images/warning_pop_up.png)  
 
-### To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.  
+___To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.___
 
 That's all. Feel free to use as it is / fork / modify. 
 
 ## Support the developer
 
 In development for now :>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
