@@ -412,20 +412,6 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
               </widget>
              </item>
              <item>
-              <widget class="QLabel" name="auth_none_label">
-               <property name="font">
-                <font>
-                 <family>Segoe UI</family>
-                 <pointsize>-1</pointsize>
-                 <fontweight>DemiBold</fontweight>
-                </font>
-               </property>
-               <property name="text">
-                <string>Authorise first</string>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="QFrame" name="user_labels_frame">
                <property name="frameShape">
                 <enum>QFrame::StyledPanel</enum>
@@ -459,7 +445,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
                    </font>
                   </property>
                   <property name="text">
-                   <string>no name</string>
+                   <string>some user-name</string>
                   </property>
                  </widget>
                 </item>
@@ -473,7 +459,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
                    </font>
                   </property>
                   <property name="text">
-                   <string>no team</string>
+                   <string>some team-name</string>
                   </property>
                  </widget>
                 </item>
@@ -1180,7 +1166,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal{
           <item alignment="Qt::AlignHCenter">
            <widget class="QLabel" name="info_label">
             <property name="text">
-             <string>Failed to connect.</string>
+             <string>Some info</string>
             </property>
            </widget>
           </item>

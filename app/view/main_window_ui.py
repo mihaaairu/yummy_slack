@@ -8,13 +8,18 @@
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import QCoreApplication, QMetaObject, QRect, QSize, Qt
-from PySide6.QtGui import QFont, QIcon
-from PySide6.QtWidgets import (QFrame, QHBoxLayout, QLabel, QLineEdit,
-                               QPushButton, QScrollArea, QSizePolicy,
-                               QSpacerItem, QTabWidget, QVBoxLayout, QWidget)
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
+    QLineEdit, QMainWindow, QPushButton, QScrollArea,
+    QSizePolicy, QSpacerItem, QTabWidget, QVBoxLayout,
+    QWidget)
 import resource_rc
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -296,15 +301,6 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addWidget(self.line_3)
 
-        self.auth_none_label = QLabel(self.header_info_frame)
-        self.auth_none_label.setObjectName(u"auth_none_label")
-        font1 = QFont()
-        font1.setFamilies([u"Segoe UI"])
-        font1.setWeight(QFont.DemiBold)
-        self.auth_none_label.setFont(font1)
-
-        self.horizontalLayout.addWidget(self.auth_none_label)
-
         self.user_labels_frame = QFrame(self.header_info_frame)
         self.user_labels_frame.setObjectName(u"user_labels_frame")
         self.user_labels_frame.setFrameShape(QFrame.StyledPanel)
@@ -315,6 +311,9 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.user_name_label = QLabel(self.user_labels_frame)
         self.user_name_label.setObjectName(u"user_name_label")
+        font1 = QFont()
+        font1.setFamilies([u"Segoe UI"])
+        font1.setWeight(QFont.DemiBold)
         self.user_name_label.setFont(font1)
 
         self.verticalLayout_3.addWidget(self.user_name_label)
@@ -639,16 +638,15 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Yummy Slack", None))
         self._user_name_label.setText(QCoreApplication.translate("MainWindow", u"User name", None))
         self._workspace_label.setText(QCoreApplication.translate("MainWindow", u"Workspace", None))
-        self.auth_none_label.setText(QCoreApplication.translate("MainWindow", u"Authorise first", None))
-        self.user_name_label.setText(QCoreApplication.translate("MainWindow", u"no name", None))
-        self.workspace_name_label.setText(QCoreApplication.translate("MainWindow", u"no team", None))
+        self.user_name_label.setText(QCoreApplication.translate("MainWindow", u"some user-name", None))
+        self.workspace_name_label.setText(QCoreApplication.translate("MainWindow", u"some team-name", None))
         self.log_out_pushButton.setText(QCoreApplication.translate("MainWindow", u"Log out", None))
         self.backup_pushButton.setText(QCoreApplication.translate("MainWindow", u"Start Backup", None))
         self.search_lineEdit.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Search", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.public_tab), QCoreApplication.translate("MainWindow", u"Public channels", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.private_tab), QCoreApplication.translate("MainWindow", u"Private channels", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.direct_tab), QCoreApplication.translate("MainWindow", u"Direct messages", None))
-        self.info_label.setText(QCoreApplication.translate("MainWindow", u"Failed to connect.", None))
+        self.info_label.setText(QCoreApplication.translate("MainWindow", u"Some info", None))
         self.auth_pushButton.setText(QCoreApplication.translate("MainWindow", u"Loading...", None))
     # retranslateUi
 

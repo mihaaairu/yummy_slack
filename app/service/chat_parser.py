@@ -40,6 +40,10 @@ class Parser(QObject):
         self.__public_channels_path = self.__main_path / Path('public channels')
         self.__direct_chats_path = self.__main_path / Path('direct chats')
 
+        self.__private_channels_path.mkdir(exist_ok=True, parents=True)
+        self.__public_channels_path.mkdir(exist_ok=True, parents=True)
+        self.__direct_chats_path.mkdir(exist_ok=True, parents=True)
+
         self.__chat_dir_path = None
         self.__attachments_dir = None
         self.__attachments_dir_path = None

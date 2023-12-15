@@ -72,8 +72,8 @@ class MainWindow(QMainWindow):
         self.info_page(show=True, label_text='Loading...')
         if not self.config.app_config_is_valid:
             self.info_page(show=True, button_text='Retry',
-                           label_text=f'                                 Invalid [{APP_CONFIG_FILE}].'
-                                      f'\nUpdate [./{APP_CONFIG_PATH}/{APP_CONFIG_FILE}] by hand and press Retry',
+                           label_text=f'Update the [{APP_CONFIG_PATH}/{APP_CONFIG_FILE}] file '
+                                      f'\naccording to the instructions in it and press Retry',
                            func_to_connect=self.restart_config_load)
             return
         if not test_ping():
@@ -152,7 +152,6 @@ class MainWindow(QMainWindow):
         self.ui.info_frame.setVisible(show)
 
     def set_team_info(self, auth_success: bool = False, user_name: str = '', team_name: str = '') -> None:
-        self.ui.auth_none_label.setVisible(not auth_success)
         self.ui.user_name_label.setVisible(auth_success)
         self.ui.workspace_name_label.setVisible(auth_success)
         if auth_success:
