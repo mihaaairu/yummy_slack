@@ -112,7 +112,7 @@ App has pretty simple GUI.
 ### To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.  
 
 That's all. Feel free to use as it is / fork / modify. 
-___
+
 ## Support the developer
 
 In development for now :>
