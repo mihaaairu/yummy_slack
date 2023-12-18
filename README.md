@@ -51,32 +51,34 @@ Here the `direct chats` folder, as example:
 User should edit `./AppData/config/app_auth.conf` only. Read about this further.  
 Logging files, stored in `./AppData/logs/` is useful for troubleshooting.  
 
-> ___Please report errors that occur while using the program to this GitHub in the issues section, attaching the corresponding log-files.___  
+> [!TIP]
+> Please report errors that occur while using the program to this GitHub in the issues section, attaching the corresponding log-files.  
 
 ## The first launch
-*__The application has a fairly user-friendly interface and informative messages, so carefully read the messages provided by the program and follow its instructions.__*  
-
 At the first start the application will create its file structure (which is described in previous chapter). The same behaviour will be in case of deleting the `AppData/` or `Backups/` folders later. They wil be recreated.
-> <span style="color:orange;">IMPORTANT</span>  
+> [!IMPORTANT]  
 > The application doesn't have any authentication data at the first start and in case of deleting the `AppData/` folder. 
-> 
-> ![no_conf.png](/app/resources/images/no_conf.png)  
+>
+> <kbd> <img src="/app/resources/images/no_conf.png" /> </kbd>
 > 
 > It needs `app_auth.conf` file, whose template will be created and stored in `./AppData/config/` after the first launch of the program.  
-> Fill the file according to the instructions in [Slack app creation manual](create_slack_app.md). 
+> Fill the file according to the instructions in [Slack app creation manual](create_slack_app.md).  
+
+> [!TIP]
+> The application has a fairly user-friendly interface and informative messages, so carefully read the messages provided by the program and follow its instructions.  
 
 ## Authorisation in Application
 After completing the app-registration and filing the `app_auth.conf` you can finally `Authorise in Slack`.  
 
-![auth.png](/app/resources/images/auth.png)  
+<kbd> <img src="/app/resources/images/auth.png" /> </kbd>
 
 If you did everything correctly on previous steps, the login web-page for the Slack-App will open in your browser. (Authentication browser-session exists only one minute, so don't waste time).  
 
-![log_in_example.png](/app/resources/images/log_in_example.png)  
+<kbd> <img src="/app/resources/images/log_in_example.png" /> </kbd>  
 
 Choose your Slack-Workspace and allow permissions-request.  
 
-> <span style="color: orange;">DON'T PANIC</span>  
+> [!TIP]  
 > Due to the fact that the application is open-source, it does not have pre-installed certificates and security keys for browsers (`pyopenssl` and `werkzeug server` with `adhoc` are used instead). 
 > For this reason, your browser will warn you that a secure connection cannot be established. Make an exception for the current web-page in your browser and continue logging in (anyway this web-page is hosted locally). 
 
@@ -88,7 +90,9 @@ Choose your Slack-Workspace and allow permissions-request.
 After logging in, you will see the apps main page instead of previous info-page with single button.  
 
 App has pretty simple GUI.  
-![GUI.png](/app/resources/images/GUI.png)  
+
+<kbd> <img src="/app/resources/images/GUI.png" /> </kbd>  
+
 Interface elements are listed below:
 1. `Info-field` - contains user and team name which are loaded after successful authorisation.
 2. `Chat-list` - list of available chats / channels.
@@ -98,12 +102,14 @@ Interface elements are listed below:
 6. `Search field` - find necessary chats or channels by their name.
 7. `Chat-groups buttons` - switch between chats / channels lists. (Search results are different for different list).
 
+> [!NOTE]
 > The app shows a pop-up window with backup global-status and info.  
 > Unlike the chat or channel backup-status, which shows the status of a specific chat, the backup global-status shows the status of the entire backup process.
 > 
->![start_pop_up.png](/app/resources/images/start_pop_up.png)  ![complete_pop_up.png](/app/resources/images/complete_pop_up.png) ![warning_pop_up.png](/app/resources/images/warning_pop_up.png)  
+> <kbd> <img src="/app/resources/images/start_pop_up.png" /> </kbd> <kbd> <img src="/app/resources/images/complete_pop_up.png" /> </kbd> <kbd> <img src="/app/resources/images/warning_pop_up.png" /> </kbd>  
 
->___To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.___
+> [!TIP]
+>To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.
 
 That's all. Feel free to use this App as it is / fork / modify. 
 
