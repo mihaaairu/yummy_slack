@@ -41,11 +41,11 @@ USER_NAME = 'USER_NAME'
 TEAM_NAME = 'TEAM_NAME'
 
 # App config field keys
-FILE_VALIDATION = 'FILE_VALIDATION'
-CLIENT_ID = 'CLIENT_ID'
-CLIENT_SECRET = 'CLIENT_SECRET'
-SIGNING_SECRET = 'SIGNING_SECRET'
-AUTH_URL = 'AUTH_URL'
+FILE_VALIDATION = 'File validation'
+CLIENT_ID = 'Client ID'
+CLIENT_SECRET = 'Client Secret'
+SIGNING_SECRET = 'Signing Secret'
+AUTH_URL = 'Sharable URL'
 
 # Start test ping address
 TEST_PING_URL = 'https://8.8.8.8'
@@ -58,22 +58,12 @@ USER_CACHE_FILE_TEMPLATE = {
     TEAM_NAME: ""
 }
 APP_CONFIG_FILE_TEMPLATE = {
-    FILE_VALIDATION: f"Replace the field-text with a single word '{COMPLETE}',"
-                     f" after you update slack-app auth data below.",
-    CLIENT_ID: "Replace the field-text with your slack-app CLIENT_ID",
-    CLIENT_SECRET: "Replace the field-text with your slack-app CLIENT_SECRET",
-    SIGNING_SECRET: "Replace the field-text with your slack-app SIGNING_SECRET",
-    AUTH_URL: "Replace the field-text with your slack-app authenticate URL with current user-scopes: "
-              "channels:history, "
-              "channels:read, "
-              "files:read, "
-              "groups:history, "
-              "groups:read,"
-              "im:history, "
-              "im:read, "
-              "mpim:history, "
-              "mpim:read, "
-              "users:read"
+    FILE_VALIDATION: f"Replace this text with a single word '{COMPLETE}',"
+                     f" after you update Slack-App auth data below.",
+    CLIENT_ID: "Replace this text with your Slack-App 'Client ID'.",
+    CLIENT_SECRET: "Replace this text with your Slack-App 'Client Secret'.",
+    SIGNING_SECRET: "Replace this text with your Slack-App 'Signing Secret'.",
+    AUTH_URL: "Replace this text with your Slack-App 'Sharable URL'."
 }
 
 # Chat type to download
