@@ -61,8 +61,8 @@ At the first start the application will create its file structure (which is desc
 >
 > <kbd> <img src="/app/resources/images/no_conf.png" /> </kbd>
 > 
-> It needs `app_auth.conf` file, whose template will be created and stored in `./AppData/config/` after the first launch of the program.  
-> Fill the file according to the instructions in [Slack app creation manual](create_slack_app.md).  
+> It needs filled out `app_auth.conf` file, whose template will be created and stored in `./AppData/config/` after the first launch of the program.  
+> Fill out the file according to the instructions in [Slack app creation manual](create_slack_app.md).    
 
 > [!TIP]
 > The application has a fairly user-friendly interface and informative messages, so carefully read the messages provided by the program and follow its instructions.  
@@ -83,7 +83,7 @@ Choose your Slack-Workspace and allow permissions-request.
 > For this reason, your browser will warn you that a secure connection cannot be established. Make an exception for the current web-page in your browser and continue logging in (anyway this web-page is hosted locally). 
 
 > 🎉 ___Congratulations!___ 🎉  
-> You have successfully logged into the app (if all worked as expected ofc). The hardest part is over. Your user-authorisation data will be stored in `AppData/cache/user.cache` on the program closing.
+> You have successfully logged into the app (if all worked as expected ofc). The hardest part, is over. Your user-authorisation data will be stored in `AppData/cache/user.cache` on the program closing.
 
 ## Basic usage
 
@@ -108,10 +108,10 @@ Interface elements are listed below:
 > 
 > <kbd> <img src="/app/resources/images/start_pop_up.png" /> </kbd> <kbd> <img src="/app/resources/images/complete_pop_up.png" /> </kbd> <kbd> <img src="/app/resources/images/warning_pop_up.png" /> </kbd>  
 
-> [!TIP]
->To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.
 
-That's all. Feel free to use this App as it is / fork / modify. 
+__To start backup, choose necessary chats / channels from the relevant groups and press `Start Backup`.__
+
+That's all. Feel free to use this App as it is / fork / modify as you want. 
 
 
 
