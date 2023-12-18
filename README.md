@@ -76,7 +76,20 @@ At the first start the application will create its file structure (which is desc
 > 
 > ![no_conf.png](/app/resources/images/no_conf.png)
 
-After completing the registration and filing the `app_auth.conf` with necessary information you can `Authorise in Slack`.  
+After completing the app-registration and filing the `app_auth.conf` with necessary information you should end up with a similar config-file:
+```
+app_auth.conf
+{
+    "FILE_VALIDATION": "complete",
+    "CLIENT_ID": "1234567890123.4567890123456",
+    "CLIENT_SECRET": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+    "SIGNING_SECRET": "1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p",
+    "AUTH_URL": "https://slack.com/oauth/v2/authorize?client_id=1234567890123.4567890123456&scope=&user_scope=channels:history,channels:read,files:read,groups:history,groups:read,im:history,im:read,mpim:history,mpim:read,users:read"
+}
+```
+> ***CLIENT_ID, CLIENT_SECRET, SIGNING_SECRET are located in [Slack-App](https://api.slack.com/apps) - `app/settings/Basic Information`***
+
+Now you can `Authorise in Slack`.  
 
 ![auth.png](/app/resources/images/auth.png)  
 
